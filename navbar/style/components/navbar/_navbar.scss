@@ -1,0 +1,55 @@
+/* STRICT */
+@use "../../main/variable/variable" as *;
+@use "../../main/mixin/mixin" as *;
+
+/* NAVBAR */
+nav {
+  @include display(flex, space-between, center);
+  @include size($height: 85px);
+  position: absolute;
+  padding: 0 3% 0 3%;
+  background: hsl(240, 82%, 98%);
+  top: 0;
+  border: solid 1px rgb(221, 221, 221);
+  @media screen and (max-width: 450px) {
+    @include size($height: 150px);
+  }
+  #logo-mefsin-mobile {
+    @include display(none, null, null);
+    @media screen and (max-width: 450px) {
+      @include display(block, null, null);
+      width: 60%;
+    }
+  }
+  #logo-mefsin {
+    width: 30%;
+    @media screen and (max-width: 450px) {
+      @include display(none, null, null);
+    }
+  }
+  .button-container {
+    @include display(flex, null, center);
+    @include size(null, 100%);
+  }
+  p {
+    font-size: 1vw;
+    @media screen and (max-width: 650px) {
+      font-size: 1.5vw;
+    }
+    @media screen and (max-width: 450px) {
+      @include display(none, null, null);
+    }
+  }
+}
+
+#hidden-title{
+    @include display(none, null, null);
+    @media screen and (max-width: 450px) {
+        @include display(flex, center, center);
+        @include size(100%, 50px);
+        position: absolute;
+        top: 150px;
+        border-bottom: solid 1px rgb(221, 221, 221);
+
+      }
+  }

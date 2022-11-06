@@ -1,0 +1,101 @@
+/* FONT */
+@font-face {
+  font-family: "Marianne";
+  src: url("/rsc/font/Marianne-Bold.woff") format("woff");
+  font-family: "Spectral";
+  src: url("/rsc/font/Spectral-Bold.ttf") format("woff");
+}
+/* VARIABLES */ /* MIXIN */ /* STRICT */
+/* BASIS */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  font-family: "Marianne", serif;
+}
+
+#button-formation {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+#button-formation .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+#button-formation .color-block {
+  width: 100px;
+  height: 100%;
+  background: #465f9d;
+  right: 0;
+}
+
+#button-teletravail {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+#button-teletravail .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+#button-teletravail .color-block {
+  width: 100px;
+  height: 100%;
+  background: #009081;
+  right: 0;
+}
+
+#button-conge {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+#button-conge .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+#button-conge .color-block {
+  width: 100px;
+  height: 100%;
+  background: #e4794a;
+  right: 0;
+}
+
+#button-autre {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+#button-autre .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+#button-autre .color-block {
+  width: 100px;
+  height: 100%;
+  background: #a558a0;
+  right: 0;
+}
+
+/* STRICT */
+/* COMPONENTS *//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "roboto";
+  > img {
+    height: 10em;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .button-reservation-home {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 1%;
+    right: 1%;
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: white;
+      background: #3a8342;
+      border-radius: 10px;
+      height: 35px;
+      width: 7em;
+      border: none;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        background: #008810;
+        box-shadow: 0 0 10px #19341c;
+      }
+    }
+    #home-button {
+      to/* p: 1%;
+      right: 12%; */
+      &:hover {
+        background: #008810;
+        box-shadow: 0 0 10px #19341c;
+      }
+    }
+  }
+}
+
+.room-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  @media (max-width:750px) {
+    flex-direction: column;
+    margin-top: 300px;
+}
+  &__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    .card-top {
+      width: 100%;
+      height: 40%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .card-bottom {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      &__top {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+      }
+      &__center {
+        width: 100%;
+        height: 30%;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+      }
+      &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          background: #444444;
+          height: 35px;
+          width: 7em;
+          border: none;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            background: #797979;
+            box-shadow: 0 0 10px #19341c;
+          }
+        }
+      }
+    }
+  }
+}

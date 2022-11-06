@@ -1,0 +1,8 @@
+/* STRICT */
+@use './main/reset/reset.scss';
+@use './main/font/font';
+@use './main/basis/basis.scss';
+
+/* COMPONENTS */
+@use './components/button/button.scss';
+@use './components/navbar/navbar.scss';

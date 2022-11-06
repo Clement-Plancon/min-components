@@ -1,0 +1,34 @@
+/* STRICT */
+@use "../../main/variable/variable" as *;
+@use "../../main/mixin/mixin" as *;
+
+/* BUTTON */
+button {
+  @include display(flex, center, center);
+  min-height: 40px;
+  padding: 10px 15px 10px 15px;
+  margin-left: 10px;
+  border: solid 1px rgb(221, 221, 221);
+  background: rgba(221, 221, 221, 0);
+  color: hsl(240, 100%, 28%);
+  cursor: pointer;
+
+  p {
+    font-family: $primary-font;
+    font-size: 0.8rem;
+    @media screen and (max-width:650px) {
+      @include display(none,null,null)
+    }
+  }
+  
+  img {
+    @include size(1rem,1rem);
+    margin-right: 10px;
+    @media screen and (max-width:650px) {
+      margin-right: 0;
+      
+    }
+  }
+}
+
+

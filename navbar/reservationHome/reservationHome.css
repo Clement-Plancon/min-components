@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "roboto";
+}
+body > img {
+  height: 10em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .button-reservation-home {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 1%;
+  right: 1%;
+}
+body .button-reservation-home > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+  background: #3a8342;
+  border-radius: 10px;
+  height: 35px;
+  width: 7em;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .button-reservation-home > a:hover {
+  background: #008810;
+  box-shadow: 0 0 10px #19341c;
+}
+to body .button-reservation-home #home-button:hover {
+  background: #008810;
+  box-shadow: 0 0 10px #19341c;
+}
+
+.room-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 750px) {
+  .room-container {
+    flex-direction: column;
+    margin-top: 300px;
+  }
+}
+.room-container__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+.room-container__card .card-top {
+  width: 100%;
+  height: 40%;
+}
+.room-container__card .card-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.room-container__card .card-bottom {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.room-container__card .card-bottom__top {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+}
+.room-container__card .card-bottom__center {
+  width: 100%;
+  height: 30%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+}
+.room-container__card .card-bottom__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+.room-container__card .card-bottom__bottom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #444444;
+  height: 35px;
+  width: 7em;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.room-container__card .card-bottom__bottom a:hover {
+  background: #797979;
+  box-shadow: 0 0 10px #19341c;
+}/*# sourceMappingURL=reservationHome.css.map */

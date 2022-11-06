@@ -1,0 +1,59 @@
+@use "../../main/variable/variable" as *;
+@use "../../main/mixin/mixin" as *;
+
+.date-picker-container {
+  @include size(400px, null);
+  @include display(flex, null, null);
+  flex-direction: column;
+  padding: 3% 5%;
+  border: 1px solid #dddddd;
+  .date-picker-top {
+    @include size(100%, 50px);
+    @include display(flex, center, center);
+    background: #f5f5fe;
+    color: #000091;
+  }
+  .date-picker-bottom {
+    @include size(100%, 100%);
+    @include display(flex, null, center);
+    flex-direction: column;
+    background: white;
+    .name-input {
+      @include size(100%, 100%);
+      @include display(flex, null, null);
+      flex-direction: column;
+      input {
+        height: 30px;
+        border: 0px;
+        border-bottom: 1px solid black;
+        background: #eeeeee;
+        &:focus {
+          outline: none !important;
+        }
+      }
+    }
+    .date-container {
+      @include size(100%, 100%);
+      @include display(flex, null, null);
+      flex-direction: column;
+      .date-input-start {
+        @include size(100%, 40px);
+        background: blue;
+      }
+      .date-input-end {
+        @extend .date-input-start;
+      }
+    }
+  }
+  .validate {
+    @include size(100%, 100%);
+    @include display(flex, center, center);
+    button {
+      @include size(100%, 100%);
+      background: #000091;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

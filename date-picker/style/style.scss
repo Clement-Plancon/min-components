@@ -1,0 +1,8 @@
+/* STRICT */
+
+@use './main/font/font';
+@use './main/basis/basis.scss';
+
+/* COMPONENTS */
+@use './components/datePicker/datePicker';
+@use './components/reasonCard/reasonCard';

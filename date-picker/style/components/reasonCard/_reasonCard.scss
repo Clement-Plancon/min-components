@@ -1,0 +1,74 @@
+@use "../../main/variable/variable" as *;
+@use "../../main/mixin/mixin" as *;
+
+.reasonCard-container {
+   @include size(100%, null);
+   @include display(flex, space-between, center);
+   flex-direction: column;
+  #button-formation {
+    @include size(400px, 100px);
+    @include display(flex, space-between, center);
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    padding: 3px;
+    .reason-input {
+      margin-left: 20px;
+      color: black;
+    }
+    .color-block {
+      @include size(100px, 100%);
+      background: #465f9d;
+      right: 0;
+    }
+  }
+
+  #button-teletravail {
+    @include size(400px, 100px);
+    @include display(flex, space-between, center);
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    padding: 3px;
+    .reason-input {
+      margin-left: 20px;
+      color: black;
+    }
+    .color-block {
+      @include size(100px, 100%);
+      background: #009081;
+      right: 0;
+    }
+  }
+
+  #button-conge {
+    @include size(400px, 100px);
+    @include display(flex, space-between, center);
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    padding: 3px;
+    .reason-input {
+      margin-left: 20px;
+      color: black;
+    }
+    .color-block {
+      @include size(100px, 100%);
+      background: #e4794a;
+      right: 0;
+    }
+  }
+
+  #button-autre {
+    @include size(400px, 100px);
+    @include display(flex, space-between, center);
+    border: 1px solid #dddddd;
+    padding: 3px;
+    .reason-input {
+      margin-left: 20px;
+      color: black;
+    }
+    .color-block {
+      @include size(100px, 100%);
+      background: #a558a0;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/* STRICT */
+@use '../variable/variable' as *;
+@use '../mixin/mixin' as *;
+
+/* BASIS */
+
+body{
+@include display(flex,center,center);
+@include size(100vw,100vh);
+background: white;
+font-family: $primary-font;
+}
+

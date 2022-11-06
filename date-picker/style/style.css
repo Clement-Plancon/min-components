@@ -1,0 +1,174 @@
+/* FONT */
+@font-face {
+  font-family: "Marianne";
+  src: url("/rsc/font/Marianne-Bold.woff") format("woff");
+  font-family: "Spectral";
+  src: url("/rsc/font/Spectral-Bold.ttf") format("woff");
+}
+/* VARIABLES */ /* MIXIN */ /* STRICT */
+/* BASIS */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  font-family: "Marianne", serif;
+}
+
+.date-picker-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  border: 1px solid #dddddd;
+}
+.date-picker-container .date-picker-top {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5fe;
+  color: #000091;
+}
+.date-picker-container .date-picker-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+}
+.date-picker-container .date-picker-bottom .name-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.date-picker-container .date-picker-bottom .name-input input {
+  height: 30px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  background: #eeeeee;
+}
+.date-picker-container .date-picker-bottom .name-input input:focus {
+  outline: none !important;
+}
+.date-picker-container .date-picker-bottom .date-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.date-picker-container .date-picker-bottom .date-container .date-input-start, .date-picker-container .date-picker-bottom .date-container .date-input-end {
+  width: 100%;
+  height: 40px;
+  background: blue;
+}
+.date-picker-container .validate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date-picker-container .validate button {
+  width: 100%;
+  height: 100%;
+  background: #000091;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reasonCard-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.reasonCard-container #button-formation {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+.reasonCard-container #button-formation .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+.reasonCard-container #button-formation .color-block {
+  width: 100px;
+  height: 100%;
+  background: #465f9d;
+  right: 0;
+}
+.reasonCard-container #button-teletravail {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+.reasonCard-container #button-teletravail .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+.reasonCard-container #button-teletravail .color-block {
+  width: 100px;
+  height: 100%;
+  background: #009081;
+  right: 0;
+}
+.reasonCard-container #button-conge {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+.reasonCard-container #button-conge .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+.reasonCard-container #button-conge .color-block {
+  width: 100px;
+  height: 100%;
+  background: #e4794a;
+  right: 0;
+}
+.reasonCard-container #button-autre {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 3px;
+}
+.reasonCard-container #button-autre .reason-input {
+  margin-left: 20px;
+  color: black;
+}
+.reasonCard-container #button-autre .color-block {
+  width: 100px;
+  height: 100%;
+  background: #a558a0;
+  right: 0;
+}
+
+/* STRICT */
+/* COMPONENTS *//*# sourceMappingURL=style.css.map */

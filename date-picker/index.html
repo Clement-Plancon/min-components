@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- DATE PICKER START -->
+    <div class="date-picker-container">
+      <div class="date-picker-top"><p>Rajouter une absence</p></div>
+      <div class="date-picker-bottom">
+        <div class="name-input">
+          <label for="prenom">Prénom</label>
+          <input id="prenom" type="text" />
+        </div>
+        <div class="reason-input">
+          <p>Raison de l'absence au bureau</p>
+          <div class="reasonCard-container">
+            <div id="button-formation">
+              <div class="reason-input">
+                <input
+                  type="radio"
+                  name="description"
+                  id="formation"
+                  value="formation"
+                  required
+                  onclick="selectedInput()"
+                />
+                <label for="formation" class="control-label">Formation</label>
+              </div>
+              <div class="color-block"></div>
+            </div>
+
+            <div id="button-teletravail">
+              <div class="reason-input">
+                <input
+                  type="radio"
+                  name="description"
+                  id="teletravail"
+                  value="teletravail"
+                  required
+                  onclick="selectedInput()"
+                />
+                <label for="teletravail" class="control-label"
+                  >Télétravail</label
+                >
+              </div>
+              <div class="color-block"></div>
+            </div>
+
+            <div id="button-conge">
+              <div class="reason-input">
+                <input
+                  type="radio"
+                  name="description"
+                  id="conge"
+                  value="conge"
+                  required
+                  onclick="selectedInput()"
+                />
+                <label for="conge" class="control-label">Congé</label>
+              </div>
+              <div class="color-block"></div>
+            </div>
+
+            <div id="button-autre">
+              <div class="reason-input">
+                <input
+                  type="radio"
+                  name="description"
+                  id="autre"
+                  value="autre"
+                  required
+                  onclick="selectedInput()"
+                />
+                <label for="autre" class="control-label">Autre</label>
+              </div>
+              <div class="color-block"></div>
+            </div>
+          </div>
+        </div>
+        <div class="date-container">
+          <p>Date(s)</p>
+          <div class="date-input-start"></div>
+          <div class="date-input-end"></div>
+        </div>
+      </div>
+
+      <div class="validate">
+        <button>Valide l'absence</button>
+      </div>
+    </div>
+    <!-- DATE PICKER END -->
+
+    <script>
+      const selectedInput = () => {
+        if (document.getElementById("formation").checked == true) {
+          document.getElementById("button-formation").style.border =
+            "1px solid #000091";
+        } else {
+          document.getElementById("button-formation").style.border =
+            "1px solid #dddddd";
+        }
+
+        if (document.getElementById("teletravail").checked == true) {
+          document.getElementById("button-teletravail").style.border =
+            "1px solid #000091";
+        } else {
+          document.getElementById("button-teletravail").style.border =
+            "1px solid #dddddd";
+        }
+
+        if (document.getElementById("conge").checked == true) {
+          document.getElementById("button-conge").style.border =
+            "1px solid #000091";
+        } else {
+          document.getElementById("button-conge").style.border =
+            "1px solid #dddddd";
+        }
+
+        if (document.getElementById("autre").checked == true) {
+          document.getElementById("button-autre").style.border =
+            "1px solid #000091";
+        } else {
+          document.getElementById("button-autre").style.border =
+            "1px solid #dddddd";
+        }
+      };
+    </script>
+  </body>
+</html>
